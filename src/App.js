@@ -6,8 +6,10 @@
 // import Heading from "./component/Heading";
 // import Navbar from "./component/Navbar";
 // import Product from "./component/Product";
-// import Event from "./component/Event"; 
-import Condition from "./component/Condition";
+// import Event from "./component/Event";
+// import Condition from "./component/Condition";
+// import StudentList from "./component/StudentList";
+import NevigationBar from "./component/NevigationBar";
 
 function App() {
   return (
@@ -31,12 +33,12 @@ function App() {
       <Product title="Tab" price="25000/-" brand="Samsung">
       <button> buy now </button>
       </Product> 
-
-      <Event />*/}
-
+      <Event />
       <Condition />
 
+    <StudentList />*/}
 
+      <NevigationBar />
     </div>
   );
 }
