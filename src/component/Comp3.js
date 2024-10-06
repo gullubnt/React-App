@@ -4,6 +4,7 @@ function Comp3()
     <div>
         <h1>Comp3</h1>
         <p> FSD by ABHISHEK in Comp3 </p>
+        <button className="btn btn-primary"> button </button>
     </div>
   )
   
