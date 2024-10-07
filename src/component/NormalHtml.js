@@ -1,6 +1,6 @@
 import Comp6 from "./Comp6";
 
-function Comp1() {
+function NormalHtml() {
   return (
     <div>
       <h1> Comp1</h1>
@@ -10,4 +10,4 @@ function Comp1() {
   );
 }
 
-export default Comp1;
+export default NormalHtml;

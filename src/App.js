@@ -1,5 +1,5 @@
-// import Comp1 from "./component/Comp1";
-// import Comp2 from "./component/Comp2";
+// import NormalHtml from "./component/NormalHtml";
+import NormalCss from "./component/NormalCss";
 // import Comp3 from "./component/Comp3";
 // import Comp4 from "./component/Comp4";
 // import Comp6 from "./component/Comp6";
@@ -11,13 +11,13 @@
 // import NevigationBar from "./component/NevigationBar";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import StudentList1 from "./component/StudentList1";
-import StudentList2 from "./component/StudentList2";
+// import StudentList2 from "./component/StudentList2";
 
 function App() {
   return (
     <div>
-      {/* <Comp1 />
-      <Comp2 />
+      <NormalCss />
+      {/*<NormalHtml />
       <Comp3 />
       <Comp4 />
       <Comp6 />
@@ -43,8 +43,8 @@ function App() {
       </BrowserRouter>
       <Condition /> 
 
-      <StudentList1 />*/}
-      <StudentList2 />
+      <StudentList1 />
+      <StudentList2 />*/}
       
     </div>
   );
