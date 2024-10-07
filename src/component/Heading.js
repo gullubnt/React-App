@@ -1,7 +1,7 @@
 function Heading() {
   return (
     <div>
-      <h1>React App</h1>
+      <h1>Heading for React App</h1>
     </div>
   );
 }

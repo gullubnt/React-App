@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 function NevigationBar() {
   return (
     <div>
-      <a href="#">Home</a>
-      <a href="#">Student</a>
-      <a href="#">Add New Student</a>
+      <Link to="/home">Home</Link>
+      <Link to="/student-list">Student</Link>
+      <Link to="/add-student">Add New Student</Link>
     </div>
   );
 }
