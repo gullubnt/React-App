@@ -8,9 +8,10 @@
 // import Product from "./component/Product";
 // import Event from "./component/Event";
 // import Condition from "./component/Condition";
-// import StudentList from "./component/StudentList";
-import NevigationBar from "./component/NevigationBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import NevigationBar from "./component/NevigationBar";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import StudentList1 from "./component/StudentList1";
+import StudentList2 from "./component/StudentList2";
 
 function App() {
   return (
@@ -20,34 +21,30 @@ function App() {
       <Comp3 />
       <Comp4 />
       <Comp6 />
-
       <Heading />
       <Navbar />
       <Product title="Laptop" price="70000/-" brand="Asus">
       <button> buy now </button>
       </Product>
-      
       <Product title="Mobile" price="20000/-" brand="Vivo">
       <button> buy now </button>
       </Product>
-      
       <Product title="Tab" price="25000/-" brand="Samsung">
       <button> buy now </button>
       </Product> 
       <Event />
-      <Condition />
-
-    <StudentList />*/}
-
       <NevigationBar />
       <BrowserRouter>
       <Routes>
         <Route path="/home" element={<Home/>}> </Route>
         <Route path="/student-list" element={<StudentList/>}> </Route>
         <Route path="/add-student" element={<Addstudent/>}> </Route>
-
       </Routes>
       </BrowserRouter>
+      <Condition /> 
+
+      <StudentList1 />*/}
+      <StudentList2 />
       
     </div>
   );
