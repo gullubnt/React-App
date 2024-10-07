@@ -1,8 +1,10 @@
 const Student = (props) => {
   return (
-    <li>
-      {props.detail.id} {props.detail.name} {props.detail.email}
-    </li>
+    <tr>
+      <td>{props.detail.id}</td>
+      <td>{props.detail.name}</td>
+      <td>{props.detail.email}</td>
+    </tr>
   );
 };
 
@@ -34,6 +36,9 @@ const StudentList = () => {
           <th>Name</th>
           <th>email</th>
         </tr>
+        {students.map((data) => (
+          <Student key={data.id} detail={data} />
+        ))}
       </table>
     </div>
   );
