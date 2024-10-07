@@ -10,6 +10,7 @@
 // import Condition from "./component/Condition";
 // import StudentList from "./component/StudentList";
 import NevigationBar from "./component/NevigationBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -39,6 +40,15 @@ function App() {
     <StudentList />*/}
 
       <NevigationBar />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/home" element={<Home/>}> </Route>
+        <Route path="/student-list" element={<StudentList/>}> </Route>
+        <Route path="/add-student" element={<Addstudent/>}> </Route>
+
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
