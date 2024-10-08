@@ -8,17 +8,37 @@
 // import Condition from "./component/Condition";
 // import StudentList1 from "./component/StudentList1";
 // import StudentList2 from "./component/StudentList2";
-import NewStudent from "./component/NewStudent";
-import Home from "./component/Home";
-import Student from "./component/Student";
-import Error from "./component/Error";
-import Heading from "./component/Heading";
-import NevigationBar from "./component/NevigationBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import NewStudent from "./component/NewStudent";
+// import Home from "./component/Home";
+// import Student from "./component/Student";
+// import Error from "./component/Error";
+// import Heading from "./component/Heading";
+// import NevigationBar from "./component/NevigationBar";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Heading from "./component/Heading";
+import { useState } from "react";
+const App = () => {
+  // let data = "my 1st react app";
+  // const [data, setData] = useState("my 1st react app");
+  const [data, setData] = useState({
+    name: "Name1",
+    email: "n1@gmail.com",
+    phn_no: "748951263",
+  });
 
-const App = ()=> {
+  const clickHandler = () => {
+    setData((previousState) => {
+      return { ...previousState, name: "Name2" };
+    });
+    // setData("MY 1ST REACT APP");
+    // data = "MY 1ST REACT APP";
+  };
   return (
     <div>
+      <h1>
+        Name:- {data.name},Email:- {data.email}, Phn_No:- {data.phn_no}
+      </h1>
+      <button onClick={clickHandler}>Dabao</button>
       {/*<NormalCss />
       <NormalHtml />
       <NprmalBootstrap />
@@ -42,8 +62,7 @@ const App = ()=> {
       <Home />
       <Student /> 
       <NewStudent />
-      <Error /> */}
-
+      <Error /> 
       <BrowserRouter>
         <NevigationBar />
         <Routes>
@@ -64,9 +83,8 @@ const App = ()=> {
           </Route>
         </Routes>
       </BrowserRouter>
-      <h5>This is footer</h5>
+      <h5>This is footer</h5> */}
     </div>
   );
-}
-
+};
 export default App;
